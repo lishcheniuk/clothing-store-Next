@@ -62,7 +62,17 @@
       height: 80px;
     }
   }
-  .nav .list-nav__item {
-    line-height: 28px;
+
+  .nav .list-nav {
+    flex-basis: 100%;
+    margin-left: 0;
+
+    &__item {
+      line-height: 28px;
+    }
+
+    &__item--cart {
+      margin-left: auto;
+    }
   }
 }

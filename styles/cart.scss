@@ -54,3 +54,44 @@
     margin-left: auto;
   }
 }
+
+@media (max-width: 600px) {
+  .cart-page .table-cart {
+    display: block;
+    width: 100%;
+    border-collapse: collapse;
+
+    &__cell {
+      display: block;
+      padding: 5px;
+      box-sizing: border-box;
+      overflow: hidden;
+      width: 100%;
+      min-width: 160px;
+      height: 80px !important;
+      font-size: 13px;
+      text-overflow: ellipsis;
+      line-height: 65px;
+      text-align: center !important;
+      border-top: none;
+    }
+  }
+
+  .table-cart thead {
+    display: block;
+  }
+
+  .table-cart thead {
+    float: left;
+  }
+
+  .table-cart tbody {
+    overflow-x: auto;
+    display: flex;
+  }
+
+  .table-cart tbody tr {
+    display: table-cell;
+    flex-grow: 1;
+  }
+}

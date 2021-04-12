@@ -18,10 +18,7 @@ export const CartModal = ({ clothing, close, del }) => {
           <ul className="cart-modal__list">
             {clothing.map((c) => (
               <li key={c.clothingId} className="cart-modal__item cart-item">
-                <img
-                  className="cart-item__img"
-                  src={`${process.env.BASE_URL}clothing/${c.image}`}
-                />{" "}
+                <img className="cart-item__img" src={`/clothing/${c.image}`} />{" "}
                 <span className="cart-item__info">
                   {c.name}
                   <br />
