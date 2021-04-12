@@ -1,6 +1,7 @@
 .item-page {
   max-width: 1200px;
   margin: auto;
+  margin-top: 10px;
 
   &__img {
     flex-basis: 30%;
@@ -103,5 +104,10 @@
 @media (max-width: 535px) {
   .item-page__img {
     flex-basis: 100%;
+  }
+
+  .item-page .desc__list {
+    margin-bottom: 10px;
+    line-height: 1;
   }
 }
