@@ -1,6 +1,7 @@
 .nav {
   display: flex;
-  height: $navbar_height;
+  flex-wrap: wrap;
+  min-height: $navbar_height;
   padding: 0px 10px;
   background-color: #fff;
 
@@ -49,5 +50,19 @@
         color: #000;
       }
     }
+  }
+}
+
+@media (max-width: 440px) {
+  .logo {
+    flex-basis: 100%;
+    text-align: center;
+
+    &__img {
+      height: 80px;
+    }
+  }
+  .nav .list-nav__item {
+    line-height: 28px;
   }
 }

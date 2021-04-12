@@ -99,3 +99,9 @@
     }
   }
 }
+
+@media (max-width: 535px) {
+  .item-page__img {
+    flex-basis: 100%;
+  }
+}
