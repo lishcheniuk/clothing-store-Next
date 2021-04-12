@@ -1,6 +1,6 @@
 import { useMutation, useQuery } from "@apollo/client";
 import { useContext, useMemo, useState } from "react";
-import { AddClothingModal } from "../../components/admin/addClothingModal";
+import { AddClothingModal } from "../../components/admin/AddClothingModal";
 import { ClothingByCategory } from "../../components/admin/ClothingByCategory";
 import { EditClothingModal } from "../../components/admin/EditClothingModal";
 import AdminLayout from "../../layouts/AdminLayout";
