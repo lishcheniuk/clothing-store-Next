@@ -108,6 +108,10 @@
 
   .item-page .desc__list {
     margin-bottom: 10px;
-    line-height: 1;
+  }
+
+  .item-page .desc {
+    margin: 10px;
+    flex-basis: calc(100% - 20px);
   }
 }
