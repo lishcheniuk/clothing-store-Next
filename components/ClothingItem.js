@@ -15,10 +15,7 @@ export const ClothingItem = ({ clothing, toCart }) => {
       }
     >
       <div className="clothing-item__img">
-        <img
-          src={`${process.env.BASE_URL}clothing/${clothing.images[0]}`}
-          alt={clothing.name}
-        />
+        <img src={`/clothing/${clothing.images[0]}`} alt={clothing.name} />
       </div>
       <h2>{clothing.name}</h2>
       <div className="clothing-item__footer">

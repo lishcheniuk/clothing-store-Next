@@ -38,7 +38,7 @@ export const SliderClothingItem = ({ images, close }) => {
             key={index}
             onClick={() => setSlide(index)}
           >
-            <img src={`${process.env.BASE_URL}clothing/${image}`} alt="" />
+            <img src={`/clothing/${image}`} alt="" />
           </div>
         ))}
       </div>

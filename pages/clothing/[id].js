@@ -23,7 +23,7 @@ const ClothesItem = () => {
       <div className="item-page wrap">
         <div className="item-page__img">
           <img
-            src={`${process.env.BASE_URL}clothing/${c.images[0]}`}
+            src={`/clothing/${c.images[0]}`}
             alt={c.name}
             onClick={() => showSlider(true)}
           />

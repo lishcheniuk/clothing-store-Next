@@ -92,7 +92,7 @@ export const EditClothingModal = ({
                 onMouseEnter={() => setIdxImage(index)}
                 onMouseLeave={() => setIdxImage(null)}
               >
-                <img src={`${process.env.BASE_URL}clothing/${image}`} alt="" />
+                <img src={`/clothing/${image}`} alt="" />
 
                 {index === idxImage && (
                   <span

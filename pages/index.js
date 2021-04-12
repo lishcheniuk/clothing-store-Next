@@ -22,7 +22,7 @@ const Index = () => {
             className="home__category category"
             key={c._id}
             style={{
-              backgroundImage: `url(${process.env.BASE_URL}${c.image})`,
+              backgroundImage: `url(${c.image})`,
             }}
             onClick={() =>
               router.push({
