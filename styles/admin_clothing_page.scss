@@ -1,0 +1,60 @@
+.admin-clothing {
+  .clothing_table {
+    margin-top: 10px;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+
+    &__title {
+      margin: 10px;
+      font-weight: 700;
+      color: #fff;
+      padding: 0 5px;
+      background-color: $color_grey;
+      cursor: pointer;
+      line-height: 2;
+      border-radius: 5px;
+
+      .title__arrow {
+        float: right;
+        //transform: translateY(3px);
+      }
+    }
+
+    &__cell {
+      overflow-wrap: break-word;
+    }
+
+    .cell-table {
+      &__img {
+        height: 80px;
+        width: 100px;
+        object-fit: cover;
+        vertical-align: middle;
+      }
+
+      &__edit,
+      &__del {
+        margin-left: 5px;
+      }
+
+      &__edit:hover {
+        color: lawngreen;
+      }
+      &__del:hover {
+        color: indianred;
+      }
+    }
+  }
+  .material-icons {
+    padding: 0;
+    vertical-align: text-top;
+  }
+}
+.btn-add {
+  min-width: 110px;
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

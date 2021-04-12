@@ -1,0 +1,44 @@
+.auth-page {
+  justify-content: center;
+
+  .form-auth {
+    margin-top: 50px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 5px solid $color_grey;
+
+    &__title {
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    &__group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    &__input {
+      flex-basis: 100%;
+      padding: 3px;
+      border: none;
+      border-bottom: 1px solid $color_grey;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #000;
+      }
+    }
+
+    &__btn {
+      margin-top: 10px;
+    }
+  }
+}

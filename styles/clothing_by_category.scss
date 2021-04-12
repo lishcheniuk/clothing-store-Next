@@ -1,0 +1,39 @@
+.clothing-item {
+  width: calc(25% - 50px);
+  height: 400px;
+  margin: 0 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px $color_grey;
+  cursor: pointer;
+
+  h2 {
+    text-align: center;
+    margin: auto 10px 10px;
+  }
+
+  &__img {
+    overflow: hidden;
+    height: 63%;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__footer {
+    margin: 10px;
+
+    .btn {
+      width: 100%;
+      margin-top: 10px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

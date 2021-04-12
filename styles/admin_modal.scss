@@ -1,0 +1,105 @@
+.admin-modal {
+  position: fixed;
+  z-index: 100;
+  top: 15%;
+  right: 20%;
+  background-color: #fff;
+  box-shadow: 0 0 10px grey;
+  color: #fff;
+  width: 40%;
+  color: grey;
+
+  .head {
+    color: #fff;
+    font-size: 14px;
+    background-color: grey;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+
+    &__close {
+      padding: 4px 8px;
+      cursor: pointer;
+      font-size: 18px;
+
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+
+  .form {
+    padding: 10px;
+
+    &__group {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      input[type="file"] {
+        display: none;
+      }
+    }
+    &-label__file {
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      background: url(/upload-image.png) center/cover no-repeat;
+      margin-right: 5px;
+      border: 1px dashed $color_grey;
+      border-radius: 5px;
+    }
+
+    &__label {
+      flex-basis: 20%;
+    }
+    &__input {
+      flex-grow: 1;
+      padding: 3px;
+      border: none;
+      border-bottom: 1px solid $color_grey;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__save {
+      margin-top: 10px;
+      display: block;
+      margin-left: auto;
+    }
+  }
+
+  .img-wrap {
+    max-width: 100px;
+    height: 80px;
+    margin: 3px;
+    position: relative;
+    box-shadow: 0 0 5px $color_grey;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__delete {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 4px;
+      font-size: 18px;
+      background-color: $color_grey;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    &--loading {
+      border: 1px solid greenyellow;
+    }
+  }
+}

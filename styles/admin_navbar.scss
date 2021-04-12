@@ -1,0 +1,33 @@
+.navbar-admin {
+  flex-basis: 25%;
+  border-right: 1px solid $color_grey;
+  align-self: flex-start;
+
+  li {
+    &:first-child {
+      text-align: center;
+      height: 100px;
+
+      .navbar-admin__link {
+        height: 100%;
+      }
+    }
+  }
+
+  &__logo {
+    height: 100%;
+    width: 55%;
+    object-fit: cover;
+  }
+
+  &__link {
+    padding: 10px;
+    width: 100%;
+
+    &--active {
+      background-color: lighten($color_grey, 10);
+      color: #fff;
+      box-shadow: 0 0 5px $color_grey;
+    }
+  }
+}

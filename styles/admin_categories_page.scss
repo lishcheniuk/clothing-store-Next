@@ -1,0 +1,78 @@
+$bg_color: rgba(255, 255, 255, 0.5);
+
+.title {
+  margin-bottom: 10px;
+}
+
+.admin-categories-page {
+  display: flex;
+  flex-wrap: wrap;
+
+  .category {
+    flex-basis: calc(50% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 120px;
+    box-shadow: 5px 5px 10px $color_grey;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &__title-wrap {
+      background-color: $bg_color;
+      position: relative;
+
+      .category__title {
+        padding: 10px 20px;
+        position: relative;
+        z-index: 10;
+
+        &:focus ~ .category__edit-title {
+          display: none;
+        }
+      }
+    }
+
+    &__edit-title {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      cursor: initial;
+      font-size: 1rem;
+      padding: 0;
+    }
+    &__delete {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 3px;
+      background-color: $bg_color;
+    }
+
+    .images-edit {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $bg_color;
+
+      font-size: 0.9rem;
+      padding-right: 5px;
+
+      .material-icons {
+        padding: 2px;
+      }
+
+      &__label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      &__input {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.metadata-page {
+  display: flex;
+  flex-wrap: wrap;
+
+  .page {
+    width: calc(25% - 20px);
+    height: 300px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px $color_grey;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(128, 128, 128, 0.253);
+
+    textarea,
+    input {
+      padding: 3px 5px;
+      border: 1px solid #fff;
+      margin: 3px 0;
+      background-color: rgba(128, 128, 128, 0.4);
+      color: #fff;
+    }
+
+    textarea:focus,
+    input:focus {
+      outline: none;
+      border: 1px solid $color_grey;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    &__path {
+      font-size: 0.8rem;
+      user-select: none;
+    }
+  }
+}

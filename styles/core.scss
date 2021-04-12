@@ -1,0 +1,68 @@
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: $color_grey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $color_grey;
+}
+
+.wrap {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #fff;
+  min-height: calc(100vh - 100px);
+  padding: 0px 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: darken($color_grey, 10);
+  border: 1px solid $color_grey;
+  background-color: lighten($color_grey, 42);
+  border-radius: 5px;
+
+  &:hover {
+    background-color: lighten($color_grey, 45);
+  }
+
+  &:disabled {
+    background-color: lighten($color_grey, 45);
+    color: lighten($color_grey, 20);
+  }
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.loader-wrap {
+  text-align: center;
+  padding: 50px;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+}
+
+.material-icons {
+  cursor: pointer;
+  padding: 3px;
+}
