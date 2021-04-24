@@ -7,6 +7,10 @@ export const ClothingQuery = gql`
       price
       _id
       images
+      categoryId {
+        _id
+        name
+      }
     }
   }
 `;
