@@ -1,2 +1,2 @@
-#Магазин по продаже одежды
+# Магазин по продаже одежды
 Демо: [https://clothing-sale.vercel.app/](https://clothing-sale.vercel.app/)
